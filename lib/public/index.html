@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>P2P: WebRTC</title>
+    <meta charset="UTF-8">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="container">
+      <div class="page-header">
+        <h1>WebRTC chat</h1>
+      </div>
+
+      <div class="row">
+        <div class="span8">
+          <h3>Chat</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Messages</th>
+              </tr>
+            </thead>
+            <tbody id="inbox">
+              <tr>
+                <td>
+                  <ul class="unstyled">
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot id="outbox">
+              <tr>
+                <td class="input-append">
+                  <form>
+                    <input class="span2 alias" type="text" value="Guest">
+                    <input class="span5 message" type="text" placeholder="Heeej" autofocus>
+                    <button type="submit" class="btn btn-primary" id="sendButton">Send</button>
+                  </form>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="span4">
+          <h3>Connected Clients</h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Peer ID</th>
+                <th>State</th>
+              </tr>
+            </thead>
+            <tbody id="clients"></tbody>
+          </table>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/js/underscore-1.4.4.min.js"></script>
+    <script src="/js/backbone-0.9.10.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/rtc.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

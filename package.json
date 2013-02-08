@@ -1,0 +1,35 @@
+{
+  "name": "rtc-chat",
+  "description": "Just testing a chat by webRTC",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Andreas Hultgren",
+    "email": "andreas.hultgren@frojd.se",
+    "url": "http://andreashultgren.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "scripts": {
+    "start": "node lib/rtc-chat.js"
+  },
+  "main": "lib/rtc-chat",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.11"
+  },
+  "keywords": []
+}
