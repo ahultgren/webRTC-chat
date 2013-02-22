@@ -54,14 +54,31 @@
             <tbody id="clients"></tbody>
           </table>
         </div>
+        <div id="notifications" class="span4 pull-right">
+          <h3>Notifications</h3>
+          <table class="table table-bordered table-striped">
+            <tbody>
+              <tr>
+                <td>Enable sounds</td>
+                <td><input class="sounds" type="checkbox" /></td>
+              </tr>
+              <tr>
+                <td>Enable popups</td>
+                <td><input class="popups" type="checkbox" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/js/underscore-1.4.4.min.js"></script>
-    <script src="/js/backbone-0.9.10.min.js"></script>
+    <script src="/js/libs/underscore-1.4.4.min.js"></script>
+    <script src="/js/libs/backbone-0.9.10.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/howler.min.js"></script>
+
     <script src="/js/main.js"></script>
     <script src="/js/rtc.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
