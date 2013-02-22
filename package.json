@@ -8,6 +8,10 @@
     "email": "andreas.hultgren@frojd.se",
     "url": "http://andreashultgren.se"
   },
+  "dependencies": {
+    "socket.io": "0.9.x",
+    "node-uuid": "1.4.x"
+  },
   "repository": {
     "type": "git",
     "url": "none"
@@ -26,7 +30,7 @@
   },
   "main": "lib/rtc-chat",
   "engines": {
-    "node": ">= 0.6.0"
+    "node": "0.8.x"
   },
   "devDependencies": {
     "grunt": "~0.3.11"
